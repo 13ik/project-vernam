@@ -29,7 +29,7 @@ function toggleMode() {
 
 function vernamEncrypt(text, key) {
   if (text.length !== key.length) {
-    alert("Key must be the same length as the message.");
+    alert("Key cant be empty.");
     return '';
   }
   let result = '';
@@ -43,7 +43,7 @@ function vernamDecrypt(text, key) {
   try {
     const decoded = atob(text);
     if (decoded.length !== key.length) {
-      alert("Key must be the same length as the encoded message.");
+      alert("Key cant be empty.");
       return '';
     }
     let result = '';
