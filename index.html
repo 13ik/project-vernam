@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Encrypt & Decrypt</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <header>
+        <div class="cipher-select">
+          <label for="cipher">Cipher:</label>
+          <select id="cipher">
+            <option value="vernam">Vernam</option>
+          </select>
+        </div>
+        <button id="themeToggle" aria-label="Toggle Theme">🌙</button>
+      </header>
+
+    <main>
+      <h1>Encrypt & Decrypt</h1>
+
+      <div class="mode-switch">
+        <button id="encryptBtn" class="active">Encrypt</button>
+        <button id="decryptBtn">Decrypt</button>
+      </div>
+
+      <input type="text" id="key" placeholder="Enter key (same length as message)" />
+
+      <div class="textareas">
+        <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+        <textarea id="outputText" readonly placeholder="Output will appear here..."></textarea>
+      </div>
+
+      <div class="actions">
+        <button onclick="processText()">Go</button>
+        <button onclick="resetAll()">Reset</button>
+        <button onclick="copyOutput()">Copy</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
