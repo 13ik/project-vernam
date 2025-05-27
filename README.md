@@ -20,7 +20,6 @@ A **simple web-based tool** that allows users to **encrypt and decrypt text usin
 - **HTML5** – For the structure of the application  
 - **CSS** – For styling and responsive layout  
 - **JavaScript** – For encryption logic and interactivity  
-- **Google Fonts (Inter)** – For modern and clean typography  
 
 ---
 
